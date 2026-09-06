@@ -1,6 +1,5 @@
-# ReferÃªncias visuais oficiais
+# Referências visuais oficiais
 
-Esta pasta armazena as referÃªncias visuais oficiais do projeto MarÃ©.
+Esta pasta armazena as referências visuais oficiais do projeto Maré.
 
-Todas as futuras implementaÃ§Ãµes de interface deverÃ£o utilizar esses materiais como padrÃ£o de design, respeitando a identidade visual, os princÃ­pios de experiÃªncia e as decisÃµes estÃ©ticas definidas para o projeto.
-
+Todas as futuras implementações de interface deverão utilizar esses materiais como padrão de design, respeitando a identidade visual, os princípios de experiência e as decisões estéticas definidas para o projeto.

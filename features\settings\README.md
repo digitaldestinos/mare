@@ -1,4 +1,3 @@
 # Settings
 
-MÃ³dulo reservado para preferÃªncias da aplicaÃ§Ã£o. NÃ£o contÃ©m telas ou regras implementadas nesta fase.
-
+Módulo reservado para preferências da aplicação. Não contém telas ou regras implementadas nesta fase.

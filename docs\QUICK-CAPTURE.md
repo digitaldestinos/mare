@@ -1,27 +1,26 @@
-# Registro rÃ¡pido â€” Sprint 5
+# Registro rápido — Sprint 5
 
 ## Fluxo
 
 1. A pessoa digita uma frase curta em `/movimentacoes`.
-2. `parseQuickCapture` extrai valor, tipo, categoria e descriÃ§Ã£o.
-3. A interface mostra uma prÃ©via compacta.
-4. Categorias desconhecidas usam `Outros` e abrem confirmaÃ§Ã£o explÃ­cita.
-5. A confirmaÃ§Ã£o chama `TransactionService.recordQuickCapture`.
+2. `parseQuickCapture` extrai valor, tipo, categoria e descrição.
+3. A interface mostra uma prévia compacta.
+4. Categorias desconhecidas usam `Outros` e abrem confirmação explícita.
+5. A confirmação chama `TransactionService.recordQuickCapture`.
 
 ## Parser
 
-O parser nÃ£o usa IA. Ele aplica regras determinÃ­sticas, com normalizaÃ§Ã£o de texto, palavras-chave para receitas e uma tabela de termos para categorias. Exemplos conhecidos tÃªm confianÃ§a alta; um gasto sem correspondÃªncia de categoria Ã© marcado como confianÃ§a mÃ©dia.
+O parser não usa IA. Ele aplica regras determinísticas, com normalização de texto, palavras-chave para receitas e uma tabela de termos para categorias. Exemplos conhecidos têm confiança alta; um gasto sem correspondência de categoria é marcado como confiança média.
 
-O contrato `QuickCaptureResult` separa interpretaÃ§Ã£o da apresentaÃ§Ã£o. Uma futura estratÃ©gia de interpretaÃ§Ã£o pode devolver o mesmo contrato sem alterar a pÃ¡gina.
+O contrato `QuickCaptureResult` separa interpretação da apresentação. Uma futura estratégia de interpretação pode devolver o mesmo contrato sem alterar a página.
 
 ## Atalhos e continuidade
 
 - `Enter`: interpretar o texto.
-- `Esc`: cancelar prÃ©via ou confirmaÃ§Ã£o e limpar o campo.
-- `Ctrl+L` / `âŒ˜L`: voltar o foco para o campo.
-- ApÃ³s confirmar, o campo Ã© limpo e recebe foco novamente.
+- `Esc`: cancelar prévia ou confirmação e limpar o campo.
+- `Ctrl+L` / `⌘L`: voltar o foco para o campo.
+- Após confirmar, o campo é limpo e recebe foco novamente.
 
-## PersistÃªncia
+## Persistência
 
-Nesta sprint, o serviÃ§o usa armazenamento em memÃ³ria apenas como adaptador temporÃ¡rio para validar o fluxo vertical. NÃ£o hÃ¡ banco, Supabase ou migraÃ§Ã£o financeira conectada. O ponto de substituiÃ§Ã£o estÃ¡ isolado em `services/finance/transaction.service.ts`.
-
+Nesta sprint, o serviço usa armazenamento em memória apenas como adaptador temporário para validar o fluxo vertical. Não há banco, Supabase ou migração financeira conectada. O ponto de substituição está isolado em `services/finance/transaction.service.ts`.

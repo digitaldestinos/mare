@@ -4,9 +4,8 @@ export const categoryTypeSchema = z.enum(["income", "expense", "transfer", "adju
 
 export const createCategorySchema = z.object({
   user_id: z.string().uuid().nullable().optional(),
-  name: z.string().trim().min(1, "O nome da categoria Ã© obrigatÃ³rio."),
+  name: z.string().trim().min(1, "O nome da categoria é obrigatório."),
   type: categoryTypeSchema,
 });
 
 export type CreateCategorySchema = z.infer<typeof createCategorySchema>;
-

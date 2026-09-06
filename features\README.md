@@ -1,16 +1,15 @@
 # Features
 
-Cada domÃ­nio Ã© isolado em um mÃ³dulo vertical. A convenÃ§Ã£o interna sugerida Ã©:
+Cada domínio é isolado em um módulo vertical. A convenção interna sugerida é:
 
 ```text
 feature/
-â”œâ”€â”€ components/   # UI exclusiva do domÃ­nio
-â”œâ”€â”€ hooks/        # comportamento React exclusivo do domÃ­nio
-â”œâ”€â”€ schemas/      # contratos Zod de entrada
-â”œâ”€â”€ services/     # casos de uso e chamadas ao backend
-â”œâ”€â”€ types.ts      # tipos do domÃ­nio
-â””â”€â”€ index.ts      # API pÃºblica do mÃ³dulo
+├── components/   # UI exclusiva do domínio
+├── hooks/        # comportamento React exclusivo do domínio
+├── schemas/      # contratos Zod de entrada
+├── services/     # casos de uso e chamadas ao backend
+├── types.ts      # tipos do domínio
+└── index.ts      # API pública do módulo
 ```
 
-Componentes compartilhados devem ir para `components/`; regras de negÃ³cio nÃ£o devem vazar para essa camada.
-
+Componentes compartilhados devem ir para `components/`; regras de negócio não devem vazar para essa camada.

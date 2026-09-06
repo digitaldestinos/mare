@@ -1,32 +1,31 @@
 # Roadmap
 
-## Fase 0 â€” FundaÃ§Ã£o (atual)
+## Fase 0 — Fundação (atual)
 
-- Estrutura modular por domÃ­nio.
+- Estrutura modular por domínio.
 - Design tokens e componentes primitivos.
-- Contratos TypeScript para o domÃ­nio financeiro.
-- DocumentaÃ§Ã£o de produto, arquitetura e dados.
+- Contratos TypeScript para o domínio financeiro.
+- Documentação de produto, arquitetura e dados.
 
-## Fase 1 â€” Identidade e contas
+## Fase 1 — Identidade e contas
 
-- AutenticaÃ§Ã£o Supabase.
-- Perfil e preferÃªncias.
+- Autenticação Supabase.
+- Perfil e preferências.
 - CRUD de contas e saldo inicial.
-- RLS e testes de autorizaÃ§Ã£o.
+- RLS e testes de autorização.
 
-## Fase 2 â€” LanÃ§amentos
+## Fase 2 — Lançamentos
 
-- Receitas, despesas e transferÃªncias.
+- Receitas, despesas e transferências.
 - Categorias do sistema e personalizadas.
-- ValidaÃ§Ã£o de formulÃ¡rios e feedback de erro.
+- Validação de formulários e feedback de erro.
 
-## Fase 3 â€” VisÃ£o financeira
+## Fase 3 — Visão financeira
 
 - Dashboard responsivo.
-- Filtros, perÃ­odos e indicadores derivados.
-- PWA, cache e experiÃªncia offline controlada.
+- Filtros, períodos e indicadores derivados.
+- PWA, cache e experiência offline controlada.
 
-## Fase 4 â€” ExpansÃ£o
+## Fase 4 — Expansão
 
-Temas fora do escopo atual serÃ£o reavaliados apÃ³s validaÃ§Ã£o do nÃºcleo: metas, cartÃµes, parcelamentos, Open Finance, IA e monetizaÃ§Ã£o.
-
+Temas fora do escopo atual serão reavaliados após validação do núcleo: metas, cartões, parcelamentos, Open Finance, IA e monetização.

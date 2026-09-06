@@ -1,32 +1,31 @@
-# PRD â€” MarÃ©
+# PRD — Maré
 
-## VisÃ£o
+## Visão
 
-MarÃ© serÃ¡ um SaaS financeiro pessoal, multiplataforma e mobile-first, focado em clareza, tranquilidade e controle do dinheiro. A experiÃªncia deve ser minimalista, premium e acessÃ­vel, com uma linguagem visual inspirada em Linear, Notion, Arc e Apple Wallet.
+Maré será um SaaS financeiro pessoal, multiplataforma e mobile-first, focado em clareza, tranquilidade e controle do dinheiro. A experiência deve ser minimalista, premium e acessível, com uma linguagem visual inspirada em Linear, Notion, Arc e Apple Wallet.
 
 ## Objetivos
 
-- Permitir que uma pessoa compreenda sua vida financeira sem fricÃ§Ã£o.
-- Criar uma base Ãºnica para web, PWA, Android e iOS.
-- Manter domÃ­nio, dados e interface desacoplados para evoluÃ§Ã£o segura.
+- Permitir que uma pessoa compreenda sua vida financeira sem fricção.
+- Criar uma base única para web, PWA, Android e iOS.
+- Manter domínio, dados e interface desacoplados para evolução segura.
 
 ## Escopo inicial
 
-- Identidade do usuÃ¡rio e preferÃªncias.
+- Identidade do usuário e preferências.
 - Contas financeiras.
-- LanÃ§amentos de receitas, despesas e transferÃªncias.
+- Lançamentos de receitas, despesas e transferências.
 - Categorias e auditoria.
-- ComposiÃ§Ã£o futura de indicadores no dashboard.
+- Composição futura de indicadores no dashboard.
 
 ## Fora do escopo atual
 
-IA, Open Finance, assinaturas, Stripe, cartÃµes, parcelamentos e metas. Esses temas tÃªm mÃ³dulos reservados, mas nÃ£o possuem implementaÃ§Ã£o.
+IA, Open Finance, assinaturas, Stripe, cartões, parcelamentos e metas. Esses temas têm módulos reservados, mas não possuem implementação.
 
-## PrincÃ­pios de produto
+## Princípios de produto
 
-Clareza antes de densidade; uma aÃ§Ã£o principal por contexto; feedback discreto; estados vazios Ãºteis; acessibilidade por teclado; mobile first; dados privados por padrÃ£o.
+Clareza antes de densidade; uma ação principal por contexto; feedback discreto; estados vazios úteis; acessibilidade por teclado; mobile first; dados privados por padrão.
 
-## MÃ©tricas futuras
+## Métricas futuras
 
-AtivaÃ§Ã£o (primeiro lanÃ§amento), retenÃ§Ã£o semanal, percentual de usuÃ¡rios com contas organizadas e taxa de conclusÃ£o dos fluxos principais.
-
+Ativação (primeiro lançamento), retenção semanal, percentual de usuários com contas organizadas e taxa de conclusão dos fluxos principais.

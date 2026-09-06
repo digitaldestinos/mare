@@ -1,4 +1,3 @@
 # Profile
 
-MÃ³dulo reservado para identidade e preferÃªncias pessoais. NÃ£o contÃ©m telas ou regras implementadas nesta fase.
-
+Módulo reservado para identidade e preferências pessoais. Não contém telas ou regras implementadas nesta fase.

@@ -1,4 +1,3 @@
 # Goals
 
-MÃ³dulo reservado para uma futura etapa. Metas nÃ£o fazem parte do escopo atual.
-
+Módulo reservado para uma futura etapa. Metas não fazem parte do escopo atual.

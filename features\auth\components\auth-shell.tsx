@@ -11,9 +11,8 @@ export function AuthShell({ children, eyebrow, title, description }: Readonly<{ 
           <p className="mx-auto mt-3 max-w-sm text-sm leading-6 text-muted-foreground">{description}</p>
         </div>
         <div className="rounded-2xl border bg-card p-6 shadow-soft sm:p-8">{children}</div>
-        <p className="mt-8 text-center text-xs text-muted-foreground">MarÃ© Â· clareza para a sua vida financeira</p>
+        <p className="mt-8 text-center text-xs text-muted-foreground">Maré · clareza para a sua vida financeira</p>
       </section>
     </main>
   );
 }
-

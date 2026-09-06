@@ -8,7 +8,7 @@ export const createTransactionSchema = z.object({
   wallet_id: z.string().uuid(),
   category_id: z.string().uuid().nullable().optional(),
   type: transactionTypeSchema,
-  description: z.string().trim().min(1, "A descriÃ§Ã£o Ã© obrigatÃ³ria."),
+  description: z.string().trim().min(1, "A descrição é obrigatória."),
   amount: z.number().positive("O valor deve ser maior que zero."),
   currency: currencySchema,
   status: transactionStatusSchema.default("confirmed"),
@@ -20,4 +20,3 @@ export const updateTransactionSchema = createTransactionSchema.omit({ wallet_id:
 
 export type CreateTransactionSchema = z.infer<typeof createTransactionSchema>;
 export type UpdateTransactionSchema = z.infer<typeof updateTransactionSchema>;
-

@@ -1,4 +1,3 @@
 # Cards
 
-MÃ³dulo reservado para uma futura etapa. CartÃµes nÃ£o fazem parte do escopo atual.
-
+Módulo reservado para uma futura etapa. Cartões não fazem parte do escopo atual.

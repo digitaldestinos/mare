@@ -1,4 +1,3 @@
 # Hooks
 
-Hooks compartilhados de React entram aqui. Hooks especÃ­ficos de domÃ­nio devem permanecer dentro do respectivo mÃ³dulo em `features/`.
-
+Hooks compartilhados de React entram aqui. Hooks específicos de domínio devem permanecer dentro do respectivo módulo em `features/`.

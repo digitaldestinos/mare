@@ -3,7 +3,7 @@ import "@/styles/globals.css";
 import { Providers } from "./providers";
 
 export const metadata: Metadata = {
-  title: "MarÃ©",
+  title: "Maré",
   description: "Uma base financeira simples, clara e preparada para crescer.",
 };
 
@@ -14,4 +14,3 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     </html>
   );
 }
-

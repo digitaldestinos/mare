@@ -3,15 +3,15 @@ import type { CurrencyCode, QuickCaptureResult } from "@/types/finance";
 type CategoryRule = { terms: string[]; category: string };
 
 const categoryRules: CategoryRule[] = [
-  { terms: ["uber", "99", "combustÃ­vel", "combustivel", "gasolina", "posto", "metrÃ´", "metro", "Ã´nibus", "onibus"], category: "Transporte" },
-  { terms: ["ifood", "i food", "rappi", "restaurante", "lanche"], category: "AlimentaÃ§Ã£o" },
+  { terms: ["uber", "99", "combustível", "combustivel", "gasolina", "posto", "metrô", "metro", "ônibus", "onibus"], category: "Transporte" },
+  { terms: ["ifood", "i food", "rappi", "restaurante", "lanche"], category: "Alimentação" },
   { terms: ["spotify", "netflix", "prime", "assinatura"], category: "Assinatura" },
   { terms: ["tim", "vivo", "claro", "celular", "telefone"], category: "Celular" },
   { terms: ["mercado", "supermercado", "feira"], category: "Mercado" },
-  { terms: ["farmÃ¡cia", "farmacia", "remÃ©dio", "remedio", "consulta"], category: "SaÃºde" },
+  { terms: ["farmácia", "farmacia", "remédio", "remedio", "consulta"], category: "Saúde" },
 ];
 
-const incomeTerms = ["recebi", "receita", "salÃ¡rio", "salario", "pix recebido", "entrada", "rendimento"];
+const incomeTerms = ["recebi", "receita", "salário", "salario", "pix recebido", "entrada", "rendimento"];
 
 function parseAmount(source: string): { amount: number; raw: string } | null {
   const matches = [...source.matchAll(/(?:r\$\s*)?(\d{1,3}(?:\.\d{3})*(?:,\d{1,2})?|\d+(?:,\d{1,2})?)/gi)];
@@ -31,7 +31,7 @@ function findCategory(source: string, type: QuickCaptureResult["type"]): { categ
 }
 
 function cleanDescription(source: string, rawAmount: string) {
-  return source.replace(new RegExp(`r\\$?\\s*${rawAmount.replace(/[.,]/g, "[.,]")}`, "i"), "").replace(/\b\d+x\b/gi, "").replace(/\s+/g, " ").trim() || "MovimentaÃ§Ã£o rÃ¡pida";
+  return source.replace(new RegExp(`r\\$?\\s*${rawAmount.replace(/[.,]/g, "[.,]")}`, "i"), "").replace(/\b\d+x\b/gi, "").replace(/\s+/g, " ").trim() || "Movimentação rápida";
 }
 
 export function parseQuickCapture(source: string, currency: CurrencyCode = "BRL"): QuickCaptureResult | null {
@@ -43,4 +43,3 @@ export function parseQuickCapture(source: string, currency: CurrencyCode = "BRL"
   const categoryResult = findCategory(value, type);
   return { source: value, description: cleanDescription(value, parsedAmount.raw), amount: parsedAmount.amount, currency, type, category: categoryResult.category, category_type: type === "income" ? "income" : "expense", confidence: categoryResult.confidence, needs_confirmation: categoryResult.confidence !== "high" };
 }
-
